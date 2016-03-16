@@ -5,11 +5,6 @@ Template.counter.onCreated(function() {
   });
 });
 
-Template.registerHelper('leadingZeros', function(n) {
-  var pad="0000";
-  return (pad+n).slice(-4); // 4 digit
-});
-
 Template.counter.helpers({
   gm: function() {
     return Counters.findOne({name: 'gm'});

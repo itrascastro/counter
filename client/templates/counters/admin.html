@@ -2,23 +2,26 @@
   <div class="row" style="margin-bottom: 20px;"></div>
   <div class="row" style="font-size: 200px">
     <div class="col-md-1"></div>
-    <div class="col-md-4 text-center" style="border: 20px solid black">GM</div>
+    <div class="col-md-4 text-center" style="border: 20px solid black;color: #ccc">GM</div>
     <div class="col-md-5 text-left" style="border: 20px solid black;background-color: black; color: white;">{{leadingZeros gm.value}}</div>
     <div class="col-md-2">
-      <button type="button" class="btn btn-success btn-lg btn-block">+</button>
-      <button type="button" class="btn btn-primary btn-lg btn-block">-</button>
-      <button type="button" class="btn btn-danger btn-lg btn-block">RESET</button>
+      <button id="gm-plus" type="button" class="btn btn-success btn-lg btn-block">+</button>
+      <button id="gm-minus" type="button" class="btn btn-primary btn-lg btn-block">-</button>
+      <button id="gm-reset" type="button" class="btn btn-danger btn-lg btn-block">RESET</button>
     </div>
   </div>
   <div class="row" style="margin-bottom: 20px;"></div>
   <div class="row" style="font-size: 200px">
     <div class="col-md-1"></div>
-    <div class="col-md-4 text-center" style="border: 20px solid black">GS</div>
+    <div class="col-md-4 text-center" style="border: 20px solid black; color:#ccc">GS</div>
     <div class="col-md-5 text-left" style="border: 20px solid black;background-color: black; color: white;">{{leadingZeros gs.value}}</div>
     <div class="col-md-2">
-      <button type="button" class="btn btn-success btn-lg btn-block">+</button>
-      <button type="button" class="btn btn-primary btn-lg btn-block">-</button>
-      <button type="button" class="btn btn-danger btn-lg btn-block">RESET</button>
+      <button id="gs-plus" type="button" class="btn btn-success btn-lg btn-block">+</button>
+      <button id="gs-minus" type="button" class="btn btn-primary btn-lg btn-block">-</button>
+      <button id="gs-reset" type="button" class="btn btn-danger btn-lg btn-block">RESET</button>
     </div>
+  </div>
+  <div class="row" style="margin-bottom: 200px;">
+    <p class="text-right" style="color: #666;font-size: xx-small">Powered by Ismael Trascastro</p>
   </div>
 </template>
