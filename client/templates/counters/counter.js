@@ -11,5 +11,8 @@ Template.counter.helpers({
   },
   gs: function() {
     return Counters.findOne({name: 'gs'});
+  },
+  altres: function () {
+    return Counters.findOne({name: 'altres'});
   }
 });
