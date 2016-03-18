@@ -21,7 +21,7 @@ border-bottom-left-radius: 10px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
 
-    border: 20px solid mediumslateblue;background-color: mediumslateblue; color: white;font-weight: 900">M{{leadingZeros gm.value}}</div>
+    border: 20px solid mediumslateblue;background-color: mediumslateblue; color: white;font-weight: 900">{{#if Template.subscriptionsReady}}M{{leadingZeros gm.value}}{{/if}}</div>
     <div class="col-md-1"></div>
   </div>
   <div class="row" style="margin-bottom: 20px;"></div>
@@ -46,7 +46,7 @@ border-bottom-left-radius: 10px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
 
-    border: 20px solid orangered;background-color: orangered; color: white;font-weight: 900">S{{leadingZeros gs.value}}</div>
+    border: 20px solid orangered;background-color: orangered; color: white;font-weight: 900">{{#if Template.subscriptionsReady}}S{{leadingZeros gs.value}}{{/if}}</div>
     <div class="col-md-1"></div>
   </div>
   <div class="row" style="margin-bottom: 20px;"></div>
@@ -71,7 +71,7 @@ border-bottom-left-radius: 10px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
 
-    border: 20px solid limegreen;background-color: limegreen; color: white;font-weight: 900">A{{leadingZeros altres.value}}</div>
+    border: 20px solid limegreen;background-color: limegreen; color: white;font-weight: 900">{{#if Template.subscriptionsReady}}A{{leadingZeros altres.value}}{{/if}}</div>
     <div class="col-md-1"></div>
   </div>
   <div class="row" style="margin-bottom: 200px;"></div>
