@@ -1,5 +1,13 @@
 <template name="counter">
   <div class="row" style="margin-bottom: 20px;"></div>
+  <div class="row" style="font-size: 60px">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center" style="color:#FFCF30; font-weight: 900;">Ins Les Salines 2016-2017</div>
+    <div class="col-md-1"></div>
+  </div>
+
+
+  <div class="row" style="margin-bottom: 20px;"></div>
   <div class="row" style="font-size: 120px">
     <div class="col-md-1"></div>
     <div class="col-md-4 text-center" style="
@@ -11,7 +19,10 @@
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 
-    border: 20px solid mediumslateblue; color:mediumslateblue; font-weight: 900;">GM</div>
+    border: 20px solid mediumslateblue; color:mediumslateblue;">
+      <div class="row" style="font-weight: 900">GM</div>
+      <div class="row" style="font-size: 28px;margin-top: -40px;">Grau Mitjà</div>
+    </div>
     <div class="col-md-6 text-center" style="
 
     -webkit-border-top-right-radius: 10px;
@@ -36,7 +47,10 @@ border-bottom-right-radius: 10px;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 
-    border: 20px solid orangered; color:orangered; font-weight: 900">GS</div>
+    border: 20px solid orangered; color:orangered;">
+      <div class="row" style="font-weight: 900">GS</div>
+      <div class="row" style="font-size: 28px;margin-top: -40px;">Grau Superior</div>
+    </div>
     <div class="col-md-6 text-center" style="
 
     -webkit-border-top-right-radius: 10px;
@@ -61,7 +75,10 @@ border-bottom-right-radius: 10px;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 
-    border: 20px solid limegreen; color:limegreen;">Altres</div>
+    border: 20px solid limegreen; color:limegreen;">
+      <div class="row" style="font-weight: 900">AG</div>
+      <div class="row" style="font-size: 28px;margin-top: -40px;">Altres Gestions</div>
+    </div>
     <div class="col-md-6 text-center" style="
 
     -webkit-border-top-right-radius: 10px;
@@ -74,5 +91,23 @@ border-bottom-right-radius: 10px;
     border: 20px solid limegreen;background-color: limegreen; color: white;font-weight: 900">{{#if Template.subscriptionsReady}}A{{leadingZeros altres.value}}{{else}}...{{/if}}</div>
     <div class="col-md-1"></div>
   </div>
-  <div class="row" style="margin-bottom: 200px;"></div>
+
+  {{#if mensaje.value }}
+  <div class="row" style="margin-bottom: 40px;"></div>
+
+  <div class="row" style="font-size: 80px">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center" style="
+
+
+
+    border: 20px solid red; color:lightgrey;
+
+    ">{{#if Template.subscriptionsReady}}<span style="color:red; font-weight: 900">Atenció:</span> {{mensaje.value}}{{else}}...{{/if}}</div>
+    <div class="col-md-1"></div>
+  </div>
+
+  {{/if}}
+
+  <div class="row" style="margin-bottom: 2000px;"></div>
 </template>
