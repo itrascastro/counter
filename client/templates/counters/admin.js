@@ -16,11 +16,6 @@ Template.admin.helpers({
     Session.set('gsId', gs._id);
     return gs;
   },
-  altres: function() {
-    altres = Counters.findOne({name: 'altres'});
-    Session.set('altresId', altres._id);
-    return altres;
-  },
   mensaje: function() {
     mensaje = Counters.findOne({name: 'mensaje'});
     Session.set('mensajeId', mensaje._id);
@@ -46,15 +41,6 @@ Template.admin.events({
   },
   'click #gs-reset': function() {
     Meteor.call('resetCounter', Session.get('gsId'));
-  },
-  'click #altres-plus': function() {
-    Meteor.call('modifyCounter', Session.get('altresId'), 1);
-  },
-  'click #altres-minus': function() {
-    Meteor.call('modifyCounter', Session.get('altresId'), -1);
-  },
-  'click #altres-reset': function() {
-    Meteor.call('resetCounter', Session.get('altresId'));
   },
   'click #mensaje-btn': function(e,t) {
     var mensaje = t.find('#mensaje');
